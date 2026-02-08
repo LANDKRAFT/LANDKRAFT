@@ -18,7 +18,74 @@ body {
   color: var(--ink);
   line-height: 1.6;
 }
+/* LANDKRAFT Color Scheme */
+:root {
+  --primary-color: #3B2F2F;    /* dark brown */
+  --secondary-color: #FFD700;  /* golden yellow */
+  --accent-color: #4CAF50;     /* green */
+  --background-color: #FFFFFF; 
+  --text-color: #333333; 
+}
 
+/* Basic styling */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.hero .btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1 1 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f7f7f7;
+  padding: 3rem 2rem;
+  text-align: center;
+}
 .container {
   max-width: 980px;
   margin: 0 auto;
